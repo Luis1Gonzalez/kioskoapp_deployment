@@ -16,7 +16,7 @@ const ResumenProducto = ({ prodResu }) => {
         />
       </div>
 
-      <div className="md:w-4/6">
+      <div className="md:w-4/6 flex flex-col items-center">
         <p className="text-xl md:text-3xl font-bold">{prodResu.nombre}</p>
         <p className="text-xl font-bold mt-2">Cantidad: {prodResu.cantidad}</p>
         <p className="text-xl font-bold mt-2 text-amber-500">
