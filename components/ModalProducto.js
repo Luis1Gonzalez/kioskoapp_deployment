@@ -25,8 +25,8 @@ const ModalProducto = () => {
     <div className="flex flex-col items-center md:flex gap-10">
       <div className="md:w-1/3">
         <Image
-          width={300}
-          height={400}
+          width={150}
+          height={200}
           alt={`Imagen de ${productox.nombre}`}
           src={`/assets/img/${productox.imagen}.jpg`}
         />
@@ -52,8 +52,8 @@ const ModalProducto = () => {
           </button>
         </div>
 
-        <h1 className="text-3xl font-bold mt-5">{productox.nombre}</h1>
-        <p className="mt-5 font-black text-5xl text-amber-500">
+        <h1 className="text-xl md:text-3xl font-bold mt-5">{productox.nombre}</h1>
+        <p className="mt-5 font-black text-3xl md:text-5xl text-amber-500">
           {formatearDinero(productox.precio)}
         </p>
 
