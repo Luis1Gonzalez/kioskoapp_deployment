@@ -6,11 +6,11 @@ const ResumenProducto = ({ prodResu }) => {
   const { handleEditarCantidades, handleEliminarProducto } = useKiosko();
 
   return (
-    <div className="shadow p-5 mb-3 flex gap-10 items-center">
+    <div className="shadow p-5 mb-3 flex flex-col gap-10 items-center">
       <div className="md:w-1/6">
         <Image
-          width={300}
-          height={400}
+          width={150}
+          height={200}
           alt={`Imagen de producto ${prodResu.nombre}`}
           src={`/assets/img/${prodResu.imagen}.jpg`}
         />
